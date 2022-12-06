@@ -33,7 +33,7 @@ body {
   font-weight: bold;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries for Navbar section */
 
 @media only screen and (max-width: 700px) {
   .navbarList {
@@ -87,7 +87,6 @@ body {
 
 }
 
-
 /* Hero Banner */
 
 .hero-banner {
@@ -117,6 +116,9 @@ img {
   left: 30px;
   padding: 5px 5px;
 }
+
+/* Media Queries for Hero Banner */
+
 @media only screen and (max-width: 450px) {
   .subHeading {
     color: rgb(247, 240, 240);
@@ -160,7 +162,8 @@ img {
 }
 
 
-/* About Me media queries */
+/* Media Queries for About Me section */
+
 @media only screen and (max-width: 700px) {
   #about {
     display: flex;
@@ -195,7 +198,8 @@ img {
 #work > p {
   margin-left: 20px;
 }
-/* work media queries */
+
+/* Media Queries for Work section */
 
 @media only screen and (max-width: 700px) {
   #work {
@@ -223,6 +227,8 @@ img {
     "pastel runBuddy"
     ;
 }
+
+/* Media Queries for Projects section */
 
 @media only screen and (max-width: 700px) {
   .projects {
@@ -325,7 +331,7 @@ h3 {
   margin-top: 40px;
 }
 
-/* contact media queries */
+/* Media Queries for Contact section */
 
 @media only screen and (max-width: 700px) {
   #contact {
