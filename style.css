@@ -71,18 +71,17 @@ body {
     height: 1vh;
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin: 15px;
     padding: 20px;
-    font-size: 1.6rem;
   }
 
   .nav-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 5px;
+    margin: 0.3rem;
     padding: 0.5rem;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
 }
