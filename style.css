@@ -33,6 +33,34 @@ body {
   font-weight: bold;
 }
 
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 700px) {
+  .navbarList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #logo {
+    width: 100%;
+    height: 1vh;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 16px;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 1rem;
+  }
+
+}
+
 /* Hero Banner */
 
 .hero-banner {
@@ -44,12 +72,13 @@ body {
 }
 
 .subHeading {
-  color: white;
-  border: 1px solid black;
+  color: rgb(247, 240, 240);
+  border: 1px solid rgb(69, 63, 63);
   position: absolute;
   bottom: 15px;
   right: 60px;
-  background-color: black;
+  background-color: rgb(70, 67, 86);
+  opacity: 0.8;
   padding: 0px 5px;
   text-align: center;
 }
@@ -81,6 +110,24 @@ img {
   margin-left: 20px;
 }
 
+
+/* About Me media queries */
+
+@media only screen and (max-width: 700px) {
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #about > h2 {
+    border-right: none;
+    border-bottom: 4px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+
 /* Work Section */
 
 #work {
@@ -100,6 +147,22 @@ img {
 #work > p {
   margin-left: 20px;
 }
+/* work media queries */
+
+@media only screen and (max-width: 700px) {
+  #work {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #work > h2 {
+    border-right: none;
+    border-bottom: 4px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
 
 .projects {
   display: grid;
@@ -112,12 +175,29 @@ img {
     "pastel runBuddy"
     ;
 }
+
+@media only screen and (max-width: 700px) {
+  .projects {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "surf"
+      "ledWall"
+      "calculator"
+      "pastel"
+      "runBuddy"
+      ;
+  }
+}
+
 .surf {
   grid-area: surf;
   background-image: url(./images/02-portfolio-4.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 90%;
   margin: 20px;
   border: 2px solid black;
   display: flex;
@@ -134,7 +214,7 @@ h3 {
   background-image: url(./images/02-portfolio-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 90%;
   margin: 20px;
   border: 2px solid black;
   display: flex;
@@ -144,7 +224,7 @@ h3 {
   background-image: url(./images/02-portfolio-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 90%;
   margin: 20px;
   border: 2px solid black;
   display: flex;
@@ -154,7 +234,7 @@ h3 {
   background-image: url(./images/02-portfolio-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 90%;
   margin: 20px;
   border: 2px solid black;
   display: flex;
@@ -164,7 +244,7 @@ h3 {
   background-image: url(./images/02-run-buddy.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 90%;
   margin: 20px;
   border: 2px solid black;
   display: flex;
@@ -178,9 +258,11 @@ h3 {
 
 #contact {
   display: grid;
+
   grid-template-columns: 20% 80%;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
+  margin-top: 70px;
 }
 
 #contact > h2 {
@@ -197,4 +279,21 @@ h3 {
   padding: 5rem;
   list-style: none;
   font-weight: bold;
+}
+
+/* contact media queries */
+
+@media only screen and (max-width: 700px) {
+  #contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #contact > h2 {
+    border-right: none;
+    border-bottom: 4px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
 }
