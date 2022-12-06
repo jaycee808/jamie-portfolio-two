@@ -54,6 +54,14 @@ body {
   text-align: center;
 }
 
+img {
+  height: 100px;
+  position: relative;
+  bottom: 5px;
+  left: 60px;
+  padding: 5px 5px;
+}
+
 /* About Me Section */
 
 #about {
